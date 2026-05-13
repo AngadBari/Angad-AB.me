@@ -58,7 +58,7 @@ const Intro = () => {
         <Btn
           name="Download CV"
           Icon={<HiDownload />}
-          className="cursor-pointer"
+          className="cursor-pointer rounded-2xl "
         />
       </div>
 
