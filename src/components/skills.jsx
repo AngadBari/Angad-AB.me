@@ -2,13 +2,14 @@ import React from "react";
 import Image from "next/image";
 import { Doto } from "next/font/google";
 import { Btn } from "./button/btn";
+import GithubGraph from "@/components/GithubGraph";
 const doto = Doto({ subsets: ["latin"], weight: ["400"] });
 export const Skills = () => {
   return (
     <>
       <div className="mt-3 flex gap-2 items-center">
         <h2 className={`${doto.className} text-2xl `}>MY STACK</h2>
-        <p className=" text-center text-sm tracking-wide text-neutral-700">
+        <p className=" text-center text-sm tracking-wide text-neutral-500">
           Which i Use/Know
         </p>
       </div>
@@ -233,7 +234,24 @@ export const Skills = () => {
         </div>
       </div>
 
-      <div className="border border-1 border-gray-900  border-dashed mt-8 "></div>
+      <div className="border border-1  border-neutral-50  border-dashed mt-8 "></div>
+
+      <section
+        className="mt-3
+      "
+      >
+        <h2 className="text-xs font-zendots "></h2>
+        <h3 className=" text-gray-200  text-xl">Github Activity</h3>
+
+        <div
+          className="mt-4
+         border border-white/10 bg-slate-800/30 backdrop-blur p-5 rounded-md"
+        >
+          <GithubGraph />
+        </div>
+      </section>
+
+      <div className="border border-1  border-neutral-50  border-dashed mt-8 "></div>
     </>
   );
 };

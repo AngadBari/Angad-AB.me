@@ -10,7 +10,7 @@ export const Container = ({ children, className }: ContainerProps) => {
   return (
     <div
       className={cn(
-        " max-w-2xl w-full mx-auto bg-white dark:bg-black p-4 md:p-10 selection:bg-cyan-400  ",
+        " max-w-4xl w-full mx-auto bg-white dark:bg-black p-4 md:p-10 selection:bg-cyan-400  ",
         className
       )}
     >

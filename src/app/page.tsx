@@ -1,6 +1,8 @@
 import { Container } from "@/components/container";
 import Intro from "@/components/intro";
 import {Skills} from "@/components/skills";
+import {Project} from "@/components/project/project";
+import {Footer} from "@/components/footer";
 import { Cause } from "next/font/google";
 import { HiMapPin } from "react-icons/hi2";
 const cause = Cause({ subsets: ["latin"], weight: ["800"] });
@@ -25,8 +27,11 @@ export default function Home() {
 
       <Container className="min-h-screen text-neutral-50">
        <Intro/>
+        <Project/>
       <Skills/>
-      </Container>
+     <Footer/>
+     </Container>
+     
     </div>
   );
 }
